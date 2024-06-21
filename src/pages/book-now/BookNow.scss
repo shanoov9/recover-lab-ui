@@ -1,0 +1,26 @@
+.bookNow-section {
+    .nav-tabs.plantypes {
+        border-bottom: 1px solid #A5B9C5;
+        padding-bottom:0px;
+
+        .nav-link {
+            color: #758896;
+            font-size: 14px;
+            font-weight: 700;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: 0px; border-radius: 0px;
+            &.active {background-color: transparent; color: var(--base-color); border: 0px; border-radius: 0px;border-bottom: 2px solid var(--base-color);}
+        }
+    }
+}
+
+.bookNow-section {
+    .container {max-width: 1024px;}
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

@@ -1,0 +1,307 @@
+.custom-radio {
+    .form-check {
+        position: relative;
+        width: 94px;
+        margin-right: 10px;
+        height: 36px;
+
+        .form-check-input+.form-check-label {
+            position: absolute;
+            background: #FFFFFF;
+            padding: 5px 10px;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            height: 36px;
+            line-height: 26px;
+        }
+
+        .form-check-input:checked+.form-check-label {
+            background-color: var(--base-color);
+            color: var(--anti-flash-white);
+        }
+    }
+
+    .form-check-input[type=radio] {
+        opacity: 0;
+        float: none;
+    }
+}
+
+.center-select {
+    .form-select {
+        background-color: var(--anti-flash-dark);
+    }
+}
+
+.select-services {
+    background-color: var(--pastel-blue);
+
+    .tab-content {
+        margin-top: 0px;
+        padding: 15px 15px 5px 15px;
+    }
+
+    .nav-tabs {
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        border: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 48px;
+
+        .nav-link {
+            border: 0px;
+            color: var(--anti-flash-white);
+            height: 48px;
+        }
+
+        .nav-link.active {
+            border-radius: 0;
+            background-color: var(--base-color);
+            color: var(--anti-flash-white);
+        }
+    }
+}
+
+.guest-details {
+    background-color: var(--pastel-blue);
+
+    .tab-content {
+        margin-top: 0px;
+        padding: 15px 15px 5px 15px;
+    }
+
+    .nav-tabs {
+        justify-content: space-between;
+        background-color: var(--secondary-color);
+        border: 0px;
+        font-size: 14px;
+        font-weight: 700;
+        height: 48px;
+
+        .nav-link {
+            border: 0px;
+            color: var(--anti-flash-white);
+            height: 48px;
+        }
+
+        .nav-link.active {
+            border-radius: 0;
+            background-color: var(--base-color);
+            color: var(--anti-flash-white);
+        }
+    }
+}
+
+.services-pack {
+    background-color: var(--anti-flash-white);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .form-check-input[type=radio],
+    .form-check-input[type=checkbox] {
+        border: 1px solid var(--base-color);
+        width: 20px;
+        height: 20px;
+    }
+
+    .form-check-label {
+        padding-top: 3px;
+        font-size: 15px;
+        font-weight: 700;
+        padding-left: 5px;
+
+        span {
+            display: block;
+            font-size: 14px;
+        }
+    }
+
+    .form-check-input:checked {
+        background-color: #2e3740;
+    }
+
+    .price-pack {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--base-color);
+
+        .pricesign {
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .timePack {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .details-button {
+            color: royalblue;
+            font-size: 16px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.calender-plug {
+    padding: 10px 0 20px 0;
+    background: var(--pastel-blue);
+
+    .react-calendar {
+        width: 100%;
+        border: 0px;
+        background-color: var(--pastel-blue);
+    }
+
+    .react-calendar__tile {
+        border-radius: 6px;
+        padding: 5.2px 6.6667px;
+        color: var(--base-color);
+    }
+
+    .react-calendar__tile--active {
+        background: #00872E;
+    }
+
+    .react-calendar__tile:disabled {
+        background: var(--pastel-blue);
+        color: #798a97;
+    }
+
+    .react-calendar__navigation {
+        height: 34px;
+        margin-bottom: 0px;
+    }
+
+    .react-calendar__navigation button:disabled {
+        background: var(--pastel-blue);
+        color: #798a97;
+    }
+
+    abbr[title] {
+        text-decoration: none;
+        text-transform: none;
+    }
+
+}
+
+.time-plug {
+    background-color: var(--pastel-blue);
+    padding: 15px 15px 5px 15px;
+    height: 319px;
+    overflow-y: auto;
+
+    .time-select {
+        background: var(--anti-flash-white);
+        padding: 10px 12px;
+        margin-bottom: 10px;
+    }
+
+    .form-check {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        .form-check-input[type=radio],
+        .services-pack .form-check-input[type=checkbox] {
+            border: 1px solid var(--base-color);
+            width: 20px;
+            height: 20px;
+        }
+
+        .form-check-input:checked {
+            background-color: #2e3740;
+        }
+
+        .form-check-input {
+            margin-left: auto;
+            margin-top: 0px;
+        }
+    }
+}
+
+.payment-des {
+    padding: 15px;
+    background-color: var(--secondary-color);
+
+    h5 {
+        text-transform: uppercase;
+        color: var(--anti-flash-white);
+        font-size: 16px;
+    }
+
+    .booking-date {
+        padding: 5px 15px;
+        background-color: rgba(46 55 54 / 30%);
+        color: var(--anti-flash-white);
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .table {
+        margin-bottom: 0;
+        background: transparent;
+        border: 0;
+        margin-top: 10px;
+
+        td {
+            background-color: transparent;
+            color: var(--anti-flash-white);
+            padding-left: 0;
+            padding-right: 0;
+            border-color: #90A2AF;
+        }
+
+        tr:last-child {
+            td {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.payment-details {
+    .btn-primary {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 16px;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            border-color: var(--base-color);
+            color: var(--base-color);
+        }
+    }
+}
+
+.membership-booking {
+    .select-services {
+        .nav-tabs {
+            justify-content: flex-start;
+        }
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .services-pack {
+        display: block;
+    }
+}
+
+.fw-400 {
+    font-weight: 400
+}

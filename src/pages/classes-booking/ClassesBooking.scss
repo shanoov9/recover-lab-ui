@@ -1,0 +1,231 @@
+.classess-filters {
+    .accordion-button {
+        background-color: var(--pastel-blue);
+        svg {
+            margin-right: 5px;
+            font-size: 20px;
+        }
+    }
+}
+
+.wrapper-nav {
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    padding:5px;
+    height:50px;
+}
+
+.list {
+    position:absolute;
+    left:0px;
+    top:0px;
+    min-width:3500px;
+    margin-top:0px;
+}
+
+.list li{
+    display:table-cell;
+    position:relative;
+    text-align:center;
+    cursor:grab;
+    cursor:-webkit-grab;
+    color:#efefef;
+    vertical-align:middle;
+}
+
+.scroller {
+text-align:center;
+cursor:pointer;
+display:none;
+padding:7px;
+padding-top:13px;
+white-space:no-wrap;
+vertical-align:middle;
+background-color:#fff;
+}
+
+.filter-boxes {
+    background: var(--anti-flash-white);
+    padding: 10px;
+    border-radius: 4px;
+    h5 {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    label.form-check-label {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+    input.form-check-input {border-color: var(--base-color); border-radius:0px}
+    input.form-check-input:checked {background-color: var(--base-color);border-color: var(--base-color);}
+    .filter-lists {
+        height: 180px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 3px;
+          }
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #888; 
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+          }
+    }
+    ul {
+        margin-bottom: 0px;
+        li {
+            padding: 3px 0;
+            display: flex;
+            padding-right: 5px;
+            align-items: flex-start;
+            .f-count {font-weight: 600; font-size: 12px;}
+        }
+    }
+}
+
+.btn-action-g {
+    display: flex;
+    justify-content: center;
+    .btn-info {
+        background-color: var(--anti-flash-white);
+        border-color: var(--anti-flash-white);
+        color: var(--base-color);
+        &:hover {
+            background-color: var(--base-color);
+            border-color: var(--base-color);
+            color: var(--anti-flash-white);
+        }
+    }
+}
+
+.MuiTab-textColorPrimary {
+    min-height: 52px !important;
+    border: 1px solid #2E3740 !important;
+    border-radius: 6px !important;
+    color: #2E3740 !important;
+    margin: 0 5px !important;
+
+    &.Mui-selected {
+        background-color: #2E3740 !important;
+        color: var(--anti-flash-white) !important;
+    }
+    &.Mui-disabled {
+        background-color: #C2D4DF !important;
+        color: #758896 !important;
+        border-color: #C2D4DF !important;
+    }
+}
+
+.classesDate {
+    input.MuiInputBase-input {display: none !important;}
+    .MuiInputBase-root {
+        height: 52px !important;
+        width: 58px !important;
+        background: var(--base-color);
+        border-radius: 4px;
+        button {
+            color: #fff;
+            padding-left: 7px;
+            svg {font-size: 30px;}
+        }
+    }
+    .css-ptiqhd-MuiSvgIcon-root {width: 2em; height: 2em;}
+}
+
+.classes-header {
+    display: flex;
+    align-items: center;
+    .class-head-des {
+        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        margin-right: 20px;
+        .classes-timing span {display: block; font-weight: 500; font-size: 14px; margin: 5px auto;}
+    }
+    .available-seat {text-align: center; font-weight: 500; font-size: 14px;}
+}
+
+.classes-box {
+    background: var(--pastel-blue);
+    padding: 15px;
+    padding-right: 0;
+}
+
+.insturctors {
+    font-weight: 700;
+    text-align: center;
+    width: 100px;
+    .instru-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid #707070;
+        margin: 0 auto 5px auto;
+        img {width: 100%;}
+    }
+}
+
+.classesBox {
+    background-color: var(--base-color);
+    color: var((--anti-flash-white));
+    .card-header {background-color: transparent;}
+    .card-body {
+        padding: 10px 15px 15px 15px;
+    }
+}
+
+.collapse-btn {
+    button {
+        background: transparent;
+        box-shadow: none;
+        border: 0;
+        color: #fff;
+        padding: 0;
+        svg {color: #fff; font-size: 30px;}
+    }
+}
+
+.css-ulxgan-MuiTabs-root .MuiTabs-scrollButtons {display: inline-flex !important;}
+
+@media (max-width:767px) {
+    .classes-header {
+        align-items: baseline;
+        .class-head-des {
+            display: block;
+        }
+        .classes-timing span {
+            margin-right: 15px;
+        }
+        .available-seat {
+            text-align: left;
+            margin: 10px 0;
+            br {display: none;}
+        }
+    }
+
+    .insturctors {
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        .instru-img {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    .classes-timing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
